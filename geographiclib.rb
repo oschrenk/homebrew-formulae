@@ -1,9 +1,9 @@
 require 'formula'
 
 class Geographiclib < Formula
-  url 'http://downloads.sourceforge.net/project/geographiclib/distrib/GeographicLib-1.22.tar.gz'
+  url 'http://downloads.sourceforge.net/project/geographiclib/distrib/GeographicLib-1.27.tar.gz'
   homepage 'http://geographiclib.sourceforge.net/'
-  md5 '75e9b723a697d33eadb6b77d0308e1ba'
+  md5 '9db6c042018c45ebc39d76a858c95afa'
 
   def install
     system "./configure", "--disable-dependency-tracking",
