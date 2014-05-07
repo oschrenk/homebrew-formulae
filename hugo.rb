@@ -15,6 +15,10 @@ class Hugo < Formula
   depends_on :arch => :intel
 
   def install
-    bin.install 'hugo'
+    if Hardware.is_64_bit?
+      bin.install 'hugo_0.10_darwin_amd64' => 'hugo'
+    else
+      bin.install 'hugo_0.10_darwin_386' => 'hugo'
+    end
   end
 end
